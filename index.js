@@ -4,7 +4,7 @@ const { getDomainInfo } = require('./whois');
 const app = express();
 const PORT = 3000;
 
-app.use(express.static(path.join(__dirname, '../public')));
+app.use(express.static(path.join(__dirname)));
 app.use(express.json());
 
 app.post('/lookup', async (req, res) => {
